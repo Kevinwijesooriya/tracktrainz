@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\trs_web_service.props" />
+</Project>

@@ -1,0 +1,368 @@
+
+/*.loading-container {*/
+/*  position: relative;*/
+/*}*/
+
+/*.loading-overlay {*/
+/*  position: absolute;*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  background-color: rgba(255, 255, 255, 0.8); !* Semi-transparent white background *!*/
+/*  z-index: 1; !* Ensure the overlay covers the loading elements *!*/
+/*}*/
+
+/*.tcontainer {*/
+/*  position: relative;*/
+/*  align-items: center;*/
+/*  margin: auto;*/
+/*}*/
+
+/*.track {*/
+/*  position: relative;*/
+/*  overflow:hidden;*/
+/*  width:50px;*/
+/*  height:100px;*/
+/*  border-left: 3px solid #333;*/
+/*  transform: skew(-10deg) rotateX(45deg);*/
+/*}*/
+
+/*.track:before {*/
+/*  content:"";*/
+/*  position: absolute;*/
+/*  height:3px;*/
+/*  width:50px;*/
+/*  background-color: #333;*/
+/*  top:90px;*/
+/*  box-shadow: 0 0 #333, 0 -10px #333, 0 -20px #333, 0 -30px #333, 0 -40px #333, 0 -50px #333, 0 -50px #333, 0 -60px #333,0 -70px #333, 0 -80px #333, 0 -90px #333, 0 -100px #333, 0 -110px #333, 0 -120px #333, 0 -130px #333, 0 -140px #333;*/
+/*  animation: track 1s linear infinite;*/
+/*}*/
+
+/*@keyframes track {*/
+/*  0% {transform: translateY(70px) rotateX(45deg);}*/
+/*  100% {transform: translateY(0px) rotateX(45deg);}*/
+/*}*/
+
+/*.track:after {*/
+/*  content:"";*/
+/*  position: absolute;*/
+/*  transform: rotate(-15deg);*/
+/*  width:50px;*/
+/*  height: 120px;*/
+/*  !* background-color: #fff; *!*/
+/*  border-left: 3px solid #333;*/
+/*  left:30px;*/
+/*  top:-10px;*/
+/*}*/
+
+/*.train {*/
+/*  position: absolute;*/
+/*  width: 60px;*/
+/*  height:60px;*/
+/*  background-color: #333;*/
+/*  border-radius:15px;*/
+/*  top:0;*/
+/*  left:-13px;*/
+/*  transform-origin: bottom;*/
+/*  animation: rotate 1s linear infinite;*/
+/*}*/
+
+/*.train:before {*/
+/*  content:"";*/
+/*  position: absolute;*/
+/*  background-color: #ced4da;*/
+/*  width:20px;*/
+/*  height:15px;*/
+/*  left:9px;*/
+/*  top:15px;*/
+/*  box-shadow: 22px 0 #ced4da;*/
+/*}*/
+
+/*.train:after {*/
+/*  content:"";*/
+/*  position: absolute;*/
+/*  background-color: #ced4da;*/
+/*  border-radius:50%;*/
+/*  height:10px;*/
+/*  width:10px;*/
+/*  top:45px;*/
+/*  left:10px;*/
+/*  box-shadow: 30px 0px #ced4da;*/
+/*}*/
+
+/*@keyframes rotate {*/
+/*  0% {transform: rotate(0);}*/
+/*  25% {transform: rotate(2deg);}*/
+/*  50% {transform: rotate(0);}*/
+/*  75% {transform: rotate(-2deg);}*/
+/*  100% {transform: rotate(0);}*/
+/*}*/
+
+
+
+
+/*body {*/
+/*  display: flex;*/
+/*  justify-content:center;*/
+/*  align-items: center;*/
+/*  height: 100vh;*/
+/*}*/
+
+.trainAnimation {
+  position: relative;
+}
+
+.content {
+  position: relative;
+  width:400px;
+  height: 400px;
+  background-color: #164668;
+  border-radius:50%;
+  overflow: hidden;
+}
+
+.buildings {
+  position: relative;
+  background-color: rgba(5, 51, 83);
+  width: 80px;
+  height: 300px;
+  left:0;
+  top:150px;
+  box-shadow: 80px 40px rgba(5, 51, 83), 120px -30px rgba(5, 51, 83), 150px 20px rgba(5, 51, 83), 190px -10px rgba(5, 51, 83, 0.5), 30px -10px rgba(5, 51, 83,0.5), 220px 70px rgba(5, 51, 83), 280px -25px rgba(5, 51, 83, 0.5), 360px 20px rgba(5, 51, 83,0.5),270px 30px rgba(5, 51, 83), 320px 70px rgba(5, 51, 83);
+}
+
+.buildings:before {
+  position: absolute;
+  content:"";
+  width: 10px;
+  height:15px;
+  background-color: rgb(252,163,17);
+  left:13px;
+  top:10px;
+  box-shadow: 23px 0px rgb(252,163,17,0.7), 47px 0px rgb(252,163,17,0.2), 0px 30px rgb(252,163,17,0.2), 23px 30px rgb(252,163,17,0.2), 47px 30px rgb(252,163,17), 120px -30px rgb(252,163,17,0.6), 140px -30px rgb(252,163,17), 160px -30px rgb(252,163,17,0.2),120px 0px rgb(252,163,17,0.2),140px 0px rgb(252,163,17,0.2), 160px 0px rgb(252,163,17,0.2), 270px 30px rgb(252,163,17,0.2), 290px 30px rgb(252,163,17,0.2),310px 30px rgb(252,163,17,0.5);
+}
+
+.buildings:after {
+  content:"";
+  position: absolute;
+  background-color: #041c2d;
+  width: 100px;
+  height:250px;
+  top:90px;
+  box-shadow:100px 30px #041c2d,150px -10px #041c2d, 230px 50px #041c2d, 300px -20px #041c2d;
+}
+
+.windows {
+  position: absolute;
+  background-color: rgb(252,163,17);
+  width: 20px;
+  height: 25px;
+  left:310px;
+  top:230px;
+  box-shadow: 30px 0 rgb(252,163,17), 60px 0 rgb(252,163,170,0.3),30px 40px rgb(252,163,170,0.3), 60px 40px rgb(252,163,17), -140px 20px rgb(252,163,17), -100px 20px rgb(252,163,17,0.3), -100px 60px rgb(252,163,17),-250px 30px rgb(252,163,17,0.8),-250px 70px rgb(252,163,17,0.2),-290px 30px rgb(252,163,17,0.2);
+}
+
+.windows:before {
+  content:"";
+  position: absolute;
+  background-color: rgb(252,163,17,0.1);
+  width: 25px;
+  height:7px;
+  left:-73px;
+  top:-80px;
+  box-shadow: 50px 15px rgb(252,163,17,0.1), 125px 40px rgb(252,163,17,0.1), 125px 55px rgb(252,163,17,0.1);
+}
+
+.windows:after {
+  content:"";
+  position: absolute;
+  background-color: rgb(252,163,17);
+  width: 15px;
+  height: 20px;
+  top:-50px;
+  left:-102px;
+  box-shadow: -115px 20px rgb(252,163,17), 47px 50px rgb(252,163,17);
+  animation: flash 4s ease infinite alternate;
+}
+
+@keyframes flash {
+  from { opacity: 0.6; }
+  to { opacity: 0.1; }
+}
+
+.bridge {
+  position: absolute;
+  z-index:4;
+  width:400px;
+  height:5px;
+  top:280px;
+  border-bottom: 5px solid #333;
+  border-top: 2px solid #333;
+}
+
+.bridge:after, .bridge:before {
+  content:"";
+  position: absolute;
+  background-color: #333;
+}
+
+.bridge:before {
+  width:2px;
+  height:5px;
+  left:60px;
+  box-shadow:110px 0px #333,160px 0px #333,270px 0px #333,320px 0px #333;
+}
+
+.bridge:after {
+  width:15px;
+  height:150px;
+  left:110px;
+  box-shadow: 160px 0 #333;
+}
+
+.train {
+  position: absolute;
+  z-index:3;
+  animation: move 6s linear infinite;
+}
+
+@keyframes move {
+  from{left:-170px;}
+  to{left:100%}
+}
+
+.carOne {
+  position: absolute;
+  width: 100px;
+  height:30px;
+  background-color: #9e2a2b;
+  left:220px;
+  top:-50px;
+  border-radius: 0 30px 0 0;
+  overflow:hidden;
+  box-shadow: inset 0 -5px #540b0e;
+}
+
+.carOne:before {
+  content:"";
+  position: absolute;
+  width: 40px;
+  height: 15px;
+  background-color: #540b0e;
+  top:5px;
+  left:60px;
+}
+
+.carOne:after {
+  content:"";
+  position: absolute;
+  background-color: #540b0e;
+  width:40px;
+  height:7px;
+  left:10px;
+  top:10px;
+}
+
+.carTwo {
+  position: absolute;
+  height: 30px;
+  width:90px;
+  background-color: #9e2a2b;
+  left:125px;
+  top:-50px;
+  box-shadow: inset 0 -5px #540b0e;
+}
+
+.carTwo:before {
+  content:"";
+  position: absolute;
+  background-color: #540b0e;
+  width:30px;
+  height:7px;
+  top:10px;
+  left:10px;
+  box-shadow: 40px 0px #540b0e;
+}
+
+.carTwo:after {
+  position: absolute;
+  content:"";
+  background-color: #210405;
+  border-radius:50%;
+  width:10px;
+  height:10px;
+  top:30px;
+  left:180px;
+  box-shadow:-20px 0 #210405,-40px 0 #210405,-60px 0 #210405,-80px 0 #210405,-100px 0 #210405,-120px 0 #210405,-140px 0 #210405,-160px 0 #210405,-180px 0 #210405,-200px 0 #210405,-220px 0 #210405,-240px 0 #210405,-260px 0 #210405,-280px 0 #210405;
+}
+
+.carThree {
+  position: absolute;
+  width: 100px;
+  height:30px;
+  background-color: #9e2a2b;
+  border-radius: 30px 0 0 0;
+  overflow:hidden;
+  box-shadow: inset 0 -5px #540b0e;
+  left:20px;
+  top:-50px;
+}
+
+.carThree:before {
+  content:"";
+  position: absolute;
+  background-color: #540b0e;
+  width: 40px;
+  height: 15px;
+  top:5px;
+}
+
+.carThree:after {
+  content:"";
+  position: absolute;
+  background-color: #540b0e;
+  width:40px;
+  height:7px;
+  top:10px;
+  left:50px;
+}
+
+.moon {
+  position: absolute;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  box-shadow: 5px 5px rgb(234, 226, 183);
+  top:60px;
+  left:200px;
+}
+
+.moon:before {
+  content:"";
+  position: absolute;
+  background-color: rgb(234, 226, 183,0.2);
+  border-radius: 50%;
+  width:40px;
+  height:40px;
+}
+
+.moon:after {
+  content:"";
+  position: absolute;
+  background-color: rgb(234, 226, 183,0.1);
+  border-radius: 50%;
+  top:-5px;
+  left:-5px;
+  width:50px;
+  height:50px;
+}
+
+.stars {
+  position: absolute;
+  background-color: #fff;
+  height:1px;
+  width:1px;
+  top:70px;
+  left:150px;
+  box-shadow: -70px 30px #fff,-40px -10px #fff,-20px -20px #fff, 34px -10px #fff,50px -30px #fff, -30px 23px #fff, 95px -10px #fff, 120px -15px #fff, 140px 20px #fff, 155px 30px #fff;
+}
+

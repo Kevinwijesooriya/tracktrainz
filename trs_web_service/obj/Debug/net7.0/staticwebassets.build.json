@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "p/6urAbs8IZbmlClKDLevV8z9/uC/IPftFYd/vbWOfk=",
+  "Source": "trs_web_service",
+  "BasePath": "_content/trs_web_service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

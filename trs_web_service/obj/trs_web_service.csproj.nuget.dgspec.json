@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\SLIIT\\Y4\\SEMESTER 2 2023 JUL-DEC\\Enterprise Application Development - SE4040\\Group Assignment\\EAD PROJECT\\trs_web_service\\trs_web_service\\trs_web_service.csproj": {}
+  },
+  "projects": {
+    "F:\\SLIIT\\Y4\\SEMESTER 2 2023 JUL-DEC\\Enterprise Application Development - SE4040\\Group Assignment\\EAD PROJECT\\trs_web_service\\trs_web_service\\trs_web_service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\SLIIT\\Y4\\SEMESTER 2 2023 JUL-DEC\\Enterprise Application Development - SE4040\\Group Assignment\\EAD PROJECT\\trs_web_service\\trs_web_service\\trs_web_service.csproj",
+        "projectName": "trs_web_service",
+        "projectPath": "F:\\SLIIT\\Y4\\SEMESTER 2 2023 JUL-DEC\\Enterprise Application Development - SE4040\\Group Assignment\\EAD PROJECT\\trs_web_service\\trs_web_service\\trs_web_service.csproj",
+        "packagesPath": "C:\\Users\\UserST\\.nuget\\packages\\",
+        "outputPath": "F:\\SLIIT\\Y4\\SEMESTER 2 2023 JUL-DEC\\Enterprise Application Development - SE4040\\Group Assignment\\EAD PROJECT\\trs_web_service\\trs_web_service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\UserST\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "BCrypt.Net": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.22.0, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.26.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.18.1, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.21.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Filters": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.26.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
